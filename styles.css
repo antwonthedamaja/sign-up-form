@@ -42,7 +42,7 @@ body {
 
 #main {
     background-color: white;
-    flex: 1.5;
+    flex: 1;
 }
 
 #footer {
@@ -59,18 +59,33 @@ body {
     width: 100%;
 }
 
-#formContainer {
-    margin: 0 3rem;
+#formcontainer {
+    margin: 0rem 5rem;
     display: flex;
-    
-    font-size: 2rem;
+    flex-flow: column wrap;
+    font-size: 1.5rem;
 }
 
+form {
+    display: flex;
+    font-size: 1rem;
+    gap: 5rem;
+}
 
+#block1 {
+    display: flex;
+    flex-direction: column;
+}
 
+#block2 {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+form input {
+    margin-bottom: 2rem;
+    height: 1rem;
+}
 
 
 
