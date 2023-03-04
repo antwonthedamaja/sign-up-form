@@ -6,6 +6,11 @@ body {
     padding: 0px;
 }
 
+@font-face {
+    font-family: Mantinia;
+    src: url('Mantinia Regular/Mantinia Regular.otf') format("opentype");
+}
+
 #hero {
     flex: 2;
     background-image: url('background.png');
@@ -41,25 +46,30 @@ body {
 }
 
 #logo {
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin-top: 10rem;
+    gap: .5rem;
     background-color: rgba(0, 0, 0, 0.583);
     width: 100%;
 }
+
+
+
+
 
 #imglogo {
     height: 7.5rem;
     width: 7.5rem;
 }
 
-#hero a:last-child {
+#hero div:last-child {
     margin-bottom: 1rem;
 }
 
 #logo p:last-child {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-family: Mantinia;
     color: white;
 }
