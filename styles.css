@@ -134,9 +134,10 @@ input:focus {
 }
 
 #submit {
+    position: absolute;
+    bottom: 15.5rem;
     font-weight: bolder;
     color: white;
-    margin: 2rem 0 .5rem;
     height: 3rem;
     width: 14rem;
     background-color: rgb(84, 141, 215);
@@ -145,5 +146,5 @@ input:focus {
 }
 
 #footer > * {
-    margin-left: 4rem;
+    margin: 5.75rem 0 0 4rem;
 }
