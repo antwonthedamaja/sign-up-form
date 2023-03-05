@@ -94,6 +94,16 @@ form input {
     border-radius: 3px;
 }
 
+#pswd {
+    margin-bottom: 0rem;
+}
+
+#pswderror {
+    margin-top: .25rem;
+    color: red;
+    font-size: .75rem;
+}
+
 #imglogo {
     height: 8rem;
     width: 8rem;
@@ -103,7 +113,7 @@ form input {
     margin-bottom: 1rem;
 }
 
-#logo p:last-child {
+#logo div:last-child {
     font-size: 3rem;
     color: rgb(255, 255, 255);
 }
