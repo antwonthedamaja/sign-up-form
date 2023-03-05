@@ -31,7 +31,7 @@
         <div id="main">
             <div id="formcontainer">
                 <p>let's do this!</p>
-                <form action="#" method="post">
+                <form>
                     <div id="block1">
                         <label for="fname">first name</label>
                         <input type="text" id="fname" name="fname" title="Your first name" required>
@@ -40,9 +40,9 @@
                         <input type="email" id="email" name="email" title="Your email address" required>
 
                         <label for="pswd">password</label>
-                        <input type="password" id="pswd" name="pswd" minlength="5" maxlength="20"
+                        <input type="password" class="pswd" id="pswd" name="pswd" minlength="5" maxlength="20"
                             placeholder="*5-20 characters" title="Password you want" required>
-                        <div id="pswderror"></div>
+                        <div id="match"></div>
                         <button id="submit" type="submit">CREATE ACCOUNT</button>
                     </div>
 
@@ -54,7 +54,7 @@
                         <input type="tel" id="phone" name="phone" title="Your phone number" required>
 
                         <label for="checkpswd">confirm password</label>
-                        <input type="password" id="checkpswd" name="checkpswd" minlength="5" maxlength="20"
+                        <input type="password" class="pswd" id="checkpswd" name="checkpswd" minlength="5" maxlength="20"
                             placeholder="*5-20 characters" title="Confirm password" required>
                     </div>
                 </form>

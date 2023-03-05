@@ -1,27 +1,42 @@
 const inputs = document.querySelectorAll('input');
 const pswd = document.querySelector('#pswd');
 const checkPswd = document.querySelector('#checkpswd');
-const pswdError = document.querySelector('#pswderror');
-let pswdBool = false;
+const pswdError = document.querySelector('#match');
+const submit = document.querySelector('#submit');
+let matchBool = false;
 
-pswd.addEventListener('change', () => {
+//prevent submit button from submitting anything
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+})
+
+//password check
+pswd.addEventListener('focusout', () => {
     if (pswd.value !== '') {
-        pswdBool = true;
+        matchBool = true;
     } else {
-        pswdBool = false;
+        matchBool = false;
     }
 });
 
-checkPswd.addEventListener('change', () => {
+//password check error message
+checkPswd.addEventListener('focusout', () => {
     if (checkPswd.value === '') {
         pswdError.textContent = '';
-    } else if (pswdBool === true && pswd.value !== checkPswd.value) {
+    } else if (matchBool === true && pswd.value !== checkPswd.value) {
         pswdError.textContent = '*error passwords do not match';
     } else {
         pswdError.textContent = '';
     }
 });
 
+pswd.addEventListener('focusout', () => {
+    if (checkPswd.value !== '' && pswd.value === checkPswd.value) {
+        pswdError.textContent = '';
+    }
+});
+
+//form validation
 inputs.forEach(input => {
     input.addEventListener('focusout', ()  => {
         if (input.value === '') {

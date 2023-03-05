@@ -108,7 +108,7 @@ input:focus {
     margin-bottom: 0rem;
 }
 
-#pswderror {
+#match {
     margin-top: .25rem;
     color: red;
     font-size: .75rem;
