@@ -86,12 +86,22 @@ form {
     flex-direction: column;
 }
 
-form input {
+input {
     margin-bottom: 2rem;
     height: 1rem;
     padding-left: 7px;
     border: 1px solid #c5c7cc;
     border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #5484ff;
+    box-shadow: 1px 1px 5px #a3a6ab;
+}
+
+.triggered:invalid {
+    border: 1px solid red;
 }
 
 #pswd {
