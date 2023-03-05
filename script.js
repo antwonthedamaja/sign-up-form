@@ -5,11 +5,6 @@ const pswdError = document.querySelector('#match');
 const submit = document.querySelector('#submit');
 let matchBool = false;
 
-//prevent submit button from submitting anything
-submit.addEventListener('click', (e) => {
-    e.preventDefault();
-})
-
 //password check
 pswd.addEventListener('focusout', () => {
     if (pswd.value !== '') {
