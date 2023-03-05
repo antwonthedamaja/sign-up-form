@@ -119,7 +119,7 @@ input:focus {
     width: 8rem;
 }
 
-#hero div:last-child {
+#hero > div:last-child {
     margin-bottom: 1rem;
 }
 
